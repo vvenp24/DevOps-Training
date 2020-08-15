@@ -1,7 +1,7 @@
 node {
 
-stage 'checkout'
-git 'https://github.com/Mohamedji/CloudenabledWebApp.git'
+stage 'git checkout'
+git 'https://github.com/dkAug01/DevOps-Training.git'
 
 stage 'compile'
 sh 'mvn compile'
@@ -14,5 +14,6 @@ sh 'mvn package'
 
 stage 'artifacts'
 archiveArtifacts 'target/*.war'
+
 
 }
